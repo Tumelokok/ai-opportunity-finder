@@ -1,0 +1,83 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  STUDENT
+  IT_STUDENT
+  GRADUATE
+  CAREER_CHANGER
+}
+
+model User {
+  id             String             @id @default(cuid())
+  createdAt      DateTime           @default(now())
+  updatedAt      DateTime           @updatedAt
+  email          String             @unique
+  password       String?
+  name           String?
+  avatar         String?
+  university     String?
+  degree         String?
+  country        String?
+  province       String?
+  graduationYear Int?
+  role           UserRole           @default(STUDENT)
+  githubUsername String?
+  linkedInUrl    String?
+  bio            String?
+  
+  // Community features
+  posts          CommunityPost[]
+  comments       Comment[]
+  likes          PostLike[]
+}
+
+model CommunityPost {
+  id        String    @id @default(cuid())
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  
+  title     String
+  content   String
+  image     String?
+  category  String    @default("general")
+  
+  author    User      @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  authorId  String
+  
+  comments  Comment[]
+  likes     PostLike[]
+}
+
+model Comment {
+  id        String    @id @default(cuid())
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  
+  content   String
+  
+  author    User      @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  authorId  String
+  
+  post      CommunityPost @relation(fields: [postId], references: [id], onDelete: Cascade)
+  postId    String
+}
+
+model PostLike {
+  id        String    @id @default(cuid())
+  createdAt DateTime  @default(now())
+  
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId    String
+  
+  post      CommunityPost @relation(fields: [postId], references: [id], onDelete: Cascade)
+  postId    String
+  
+  @@unique([userId, postId])
+}
