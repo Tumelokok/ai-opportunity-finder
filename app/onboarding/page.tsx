@@ -1,10 +1,11 @@
 'use client';
 
-import { useState } from 'react';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
-import { Card } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import { useState } from 'react';
+
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
 
 const steps = [
   {
@@ -132,7 +133,7 @@ export default function OnboardingPage() {
                   Welcome to Futora!
                 </h1>
                 <p className="text-lg text-slate-600 mb-8">
-                  Your career roadmap is ready. Let's get started on building your future.
+                  Your career roadmap is ready. Let&apos;s get started on building your future.
                 </p>
 
                 <div className="grid gap-3 mb-8">

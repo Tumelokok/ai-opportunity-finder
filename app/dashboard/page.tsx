@@ -1,8 +1,8 @@
-import { motion } from 'framer-motion';
-import { ArrowRight, Briefcase, ChartBar, CheckCircle2, Trophy, Settings, LogOut, User } from 'lucide-react';
-import { Card } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+import { ArrowRight, CheckCircle2, LogOut, Settings } from 'lucide-react';
 import Link from 'next/link';
+
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
 
 export default function DashboardPage() {
   return (
@@ -37,7 +37,7 @@ export default function DashboardPage() {
                 <div>
                   <p className="text-sm uppercase tracking-[0.24em] text-brand-600 font-semibold">Your career journey</p>
                   <h2 className="mt-3 text-3xl font-bold text-slate-950">Build your future with confidence</h2>
-                  <p className="mt-3 text-slate-700">Here's what you need to focus on this week to reach your goals.</p>
+                  <p className="mt-3 text-slate-700">Here&apos;s what you need to focus on this week to reach your goals.</p>
                 </div>
                 <Link href="#">
                   <Button className="inline-flex items-center gap-2">

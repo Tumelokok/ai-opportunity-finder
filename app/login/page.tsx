@@ -1,11 +1,12 @@
 'use client';
 
+import { ArrowRight, Eye, EyeOff } from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
-import { ArrowRight, Eye, EyeOff } from 'lucide-react';
+
+import { useAuth } from '@/app/context/auth';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { useAuth } from '@/app/context/auth';
 
 export default function LoginPage() {
   const [email, setEmail] = useState('');
@@ -85,7 +86,7 @@ export default function LoginPage() {
               Forgot your password?
             </Link>
             <p className="text-slate-600">
-              Don't have an account?{' '}
+              Don&apos;t have an account?{' '}
               <Link href="/signup" className="text-brand-600 font-semibold hover:text-brand-700">
                 Sign up
               </Link>

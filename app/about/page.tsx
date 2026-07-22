@@ -1,7 +1,8 @@
-import { Sparkles, Target, Users, Zap, Heart, TrendingUp } from 'lucide-react';
-import { Card } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+import { Heart, Sparkles, Target, TrendingUp, Zap } from 'lucide-react';
 import Link from 'next/link';
+
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
 
 export default function AboutPage() {
   return (
@@ -35,7 +36,7 @@ export default function AboutPage() {
               <div>
                 <h2 className="text-3xl font-bold text-slate-950">The Problem I Saw</h2>
                 <p className="mt-4 text-slate-700 leading-relaxed">
-                  Growing up in South Africa, I witnessed the economic reality: millions of talented students were graduating without knowing if they were competitive for their dream jobs. They had degrees but lacked clarity. They studied hard but didn't know which skills mattered most. They built projects but didn't understand how to showcase them.
+                  Growing up in South Africa, I witnessed the economic reality: millions of talented students were graduating without knowing if they were competitive for their dream jobs. They had degrees but lacked clarity. They studied hard but didn&apos;t know which skills mattered most. They built projects but didn&apos;t understand how to showcase them.
                 </p>
               </div>
 
@@ -87,7 +88,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-xl font-semibold text-slate-950">Focused on Now</h3>
               <p className="mt-4 text-slate-600">
-                Career readiness isn't someday. It's this week. It's this month. It's this semester.
+                Career readiness isn&apos;t someday. It&apos;s this week. It&apos;s this month. It&apos;s this semester.
               </p>
             </Card>
           </div>
@@ -99,10 +100,10 @@ export default function AboutPage() {
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-4xl font-bold text-slate-950">Built in South Africa. Designed for the World.</h2>
           <p className="mt-6 text-lg text-slate-600 leading-relaxed">
-            South Africa has talent. We have brilliant minds. What we've lacked is clarity and confidence. Futora starts here because if we can help South African students compete globally, we can help anyone.
+            South Africa has talent. We have brilliant minds. What we&apos;ve lacked is clarity and confidence. Futora starts here because if we can help South African students compete globally, we can help anyone.
           </p>
           <p className="mt-6 text-lg text-slate-600 leading-relaxed">
-            The platform is architected to scale internationally. Whether you're in Cape Town, Lagos, Nairobi, or anywhere else, Futora adapts to local opportunities, local companies, local context—while maintaining a global standard of excellence.
+            The platform is architected to scale internationally. Whether you&apos;re in Cape Town, Lagos, Nairobi, or anywhere else, Futora adapts to local opportunities, local companies, local context—while maintaining a global standard of excellence.
           </p>
         </div>
       </section>
@@ -114,9 +115,9 @@ export default function AboutPage() {
             <Sparkles size={18} className="text-brand-600" />
             <span className="text-sm font-semibold text-brand-700">Growing the team</span>
           </div>
-          <h2 className="text-3xl font-bold text-slate-950">We're just getting started.</h2>
+          <h2 className="text-3xl font-bold text-slate-950">We&apos;re just getting started.</h2>
           <p className="mt-6 text-slate-600 leading-relaxed">
-            Futora is backed by a mission to reduce unemployment across Africa. We're hiring brilliant engineers, designers, product people, and career coaches who believe in this.
+            Futora is backed by a mission to reduce unemployment across Africa. We&apos;re hiring brilliant engineers, designers, product people, and career coaches who believe in this.
           </p>
           <Link href="/community">
             <Button className="mt-8 inline-flex items-center gap-2">

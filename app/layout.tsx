@@ -1,8 +1,10 @@
+import './globals.css';
+
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import './globals.css';
-import { SiteHeader } from '@/components/layout/site-header';
+
 import { AuthProvider } from '@/app/context/auth';
+import { SiteHeader } from '@/components/layout/site-header';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 

@@ -1,8 +1,8 @@
-import { motion } from 'framer-motion';
-import { ArrowRight, BarChart3, Briefcase, CheckCircle2, Code, GitBranch, Lightbulb, Sparkles, TrendingUp, Users, Zap } from 'lucide-react';
+import { ArrowRight, BarChart3, Sparkles } from 'lucide-react';
+import Link from 'next/link';
+
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import Link from 'next/link';
 
 const stats = [
   { value: '3.2M+', label: 'Unemployed CS graduates' },
@@ -156,7 +156,7 @@ export default function HomePage() {
               <ul className="mt-6 space-y-4 text-slate-700">
                 <li className="flex gap-3">
                   <span className="text-2xl">❌</span>
-                  <span>You don't know if your GitHub is strong enough</span>
+                  <span>You don&apos;t know if your GitHub is strong enough</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-2xl">❌</span>
@@ -164,11 +164,11 @@ export default function HomePage() {
                 </li>
                 <li className="flex gap-3">
                   <span className="text-2xl">❌</span>
-                  <span>You're not sure which skills matter most</span>
+                  <span>You&apos;re not sure which skills matter most</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-2xl">❌</span>
-                  <span>You apply to jobs you're unprepared for</span>
+                  <span>You apply to jobs you&apos;re unprepared for</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-2xl">❌</span>
@@ -226,7 +226,7 @@ export default function HomePage() {
                     <p className="text-sm text-slate-600">{testimonial.role}</p>
                   </div>
                 </div>
-                <p className="text-slate-700 italic">"{testimonial.quote}"</p>
+                <p className="text-slate-700 italic">&quot;{testimonial.quote}&quot;</p>
               </Card>
             ))}
           </div>

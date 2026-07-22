@@ -1,7 +1,8 @@
-import { Card } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+import { AlertCircle, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
-import { ArrowLeft, TrendingUp, AlertCircle } from 'lucide-react';
+
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
 
 export default function GitHubAnalyzerPage() {
   return (

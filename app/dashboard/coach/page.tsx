@@ -1,7 +1,8 @@
-import { Card } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import Link from 'next/link';
 import { ArrowLeft, Send } from 'lucide-react';
+import Link from 'next/link';
+
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
 
 export default function CoachPage() {
   return (
@@ -19,7 +20,7 @@ export default function CoachPage() {
             <div className="flex gap-3">
               <div className="text-2xl">🤖</div>
               <div className="bg-white rounded-lg p-4 max-w-xs">
-                <p className="text-slate-700">Hi! I'm your AI career coach. I'm here to help you navigate your path to becoming a software engineer. What would you like to know today?</p>
+                <p className="text-slate-700">Hi! I&apos;m your AI career coach. I&apos;m here to help you navigate your path to becoming a software engineer. What would you like to know today?</p>
               </div>
             </div>
 
@@ -33,7 +34,7 @@ export default function CoachPage() {
             <div className="flex gap-3">
               <div className="text-2xl">🤖</div>
               <div className="bg-white rounded-lg p-4 max-w-sm">
-                <p className="text-slate-700">Based on your profile, I'd recommend starting with backend fundamentals. You already have strong frontend skills from React. Adding Node.js and database knowledge will make you much more competitive. Start with building a REST API this week.</p>
+                <p className="text-slate-700">Based on your profile, I&apos;d recommend starting with backend fundamentals. You already have strong frontend skills from React. Adding Node.js and database knowledge will make you much more competitive. Start with building a REST API this week.</p>
               </div>
             </div>
           </div>

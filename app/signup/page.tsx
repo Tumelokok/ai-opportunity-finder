@@ -1,11 +1,12 @@
 'use client';
 
+import { ArrowRight, Eye, EyeOff } from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
-import { ArrowRight, Eye, EyeOff } from 'lucide-react';
+
+import { useAuth } from '@/app/context/auth';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { useAuth } from '@/app/context/auth';
 
 export default function SignupPage() {
   const [email, setEmail] = useState('');
