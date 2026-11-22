@@ -12,7 +12,7 @@ export default function DashboardPage() {
         <div className="flex items-center justify-between mb-10">
           <div>
             <h1 className="text-3xl lg:text-4xl font-bold text-slate-950">Dashboard</h1>
-            <p className="mt-2 text-slate-600">Welcome back, Software Engineer</p>
+            <p className="mt-2 text-slate-600">Career dashboard preview · Example scores and activity</p>
           </div>
           <div className="flex gap-3">
             <Link href="/settings">
@@ -249,8 +249,8 @@ export default function DashboardPage() {
               <h3 className="text-sm uppercase tracking-[0.24em] text-slate-600 font-semibold mb-4">Resources</h3>
               <ul className="space-y-3 text-sm">
                 <li>
-                  <Link href="#" className="text-brand-600 hover:text-brand-700 font-medium">
-                    📚 Getting started guide
+                  <Link href="/dashboard/brief" className="text-brand-600 hover:text-brand-700 font-medium">
+                    South African graduate opportunity brief
                   </Link>
                 </li>
                 <li>
